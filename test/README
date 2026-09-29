@@ -9,3 +9,10 @@ in the development cycle.
 
 More information about PlatformIO Unit Testing:
 - https://docs.platformio.org/en/latest/advanced/unit-testing/index.html
+
+Notes : 
+There are four edges : 
+1 . Positive 
+2 . Negative Edges
+3 . Positive to Negative edge
+4 . Negative to positive edge 
