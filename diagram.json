@@ -1,8 +1,7 @@
 {
   "version": 1,
-  "author": "Jutt Saab",
   "editor": "wokwi",
-  "parts": [ { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 86.4, "left": -38.4, "attrs": {} } ],
-  "connections": [ [ "esp:TX", "$serialMonitor:RX", "", [] ], [ "esp:RX", "$serialMonitor:TX", "", [] ] ],
+  "parts": [ { "type": "wokwi-esp32-devkit-v1", "id": "esp1", "top": 60, "left": 10, "attrs": {} } ],
+  "connections": [],
   "dependencies": {}
 }

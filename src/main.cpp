@@ -1,13 +1,17 @@
 #include <Arduino.h>
-#define LED_BUILTIN 2
 
-void setup() {
-     pinMode(LED_BUILTIN, OUTPUT);
+#define LED_PIN 2
+
+void setup()
+{
+    pinMode(LED_PIN, OUTPUT);
 }
 
-void loop() {
-      digitalWrite(LED_BUILTIN, HIGH);
-      delay(1000);
-      digitalWrite(LED_BUILTIN, LOW);
-      delay(1000);
+void loop()
+{
+    digitalWrite(LED_PIN, HIGH);
+    delay(1000);
+
+    digitalWrite(LED_PIN, LOW);
+    delay(1000);
 }
