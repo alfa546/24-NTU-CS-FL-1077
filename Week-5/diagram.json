@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "author": "FAQI",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -100,
+      "left": 210,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -45,
+      "left": 215,
+      "rotate": 90,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 130,
+      "left": 220,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": -190,
+      "left": 400,
+      "attrs": {
+        "i2cAddress": "0x3c"
+      }
+    }
+  ],
+  "connections": [
+    ["esp:TX", "$serialMonitor:RX", "", []],
+    ["esp:RX", "$serialMonitor:TX", "", []],
+
+    ["esp:4", "r1:1", "green", ["h50"]],
+    ["r1:2", "led1:A", "green", ["v-20"]],
+    ["led1:C", "esp:GND.1", "black", ["v20", "h-80"]],
+
+    ["esp:5", "btn1:1.l", "blue", ["h60"]],
+    ["btn1:2.l", "esp:GND.2", "black", ["h-30"]],
+
+    ["esp:21", "oled1:SDA", "blue", ["h100", "v-160"]],
+    ["esp:22", "oled1:SCL", "yellow", ["h120", "v-180"]],
+    ["esp:3V3", "oled1:VCC", "red", ["h140", "v-200"]],
+    ["esp:GND.3", "oled1:GND", "black", ["h160", "v-220"]]
+  ],
+  "dependencies": {}
+}
