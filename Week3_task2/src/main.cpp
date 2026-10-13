@@ -6,7 +6,7 @@
 
 #include <Arduino.h>
 
-#define LED 4
+#define LED 2
 
 hw_timer_t *My_timer = NULL;
 volatile bool ledState = false;
