@@ -10,7 +10,7 @@
 #define OLED_SCL 22
 #define OLED_ADDR 0x3C
 #define DHT_PIN 19
-#define DHT_TYPE DHT22
+#define DHT_TYPE DHT11
 
 Adafruit_SSD1306 display(
     SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1
