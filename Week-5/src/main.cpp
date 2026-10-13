@@ -2,11 +2,7 @@
 #include <Wire.h>
 #include <U8g2lib.h>
 
-// Assignment
-// Timer Interrupt + Button Debounce + I2C OLED
-// Embedded IoT System Fall-2026
-// Name: M Ayub Mughal
-// Reg#: 24-NTU-CS-FL-1059
+
 
 #define LED 4
 #define BUTTON_PIN 5
